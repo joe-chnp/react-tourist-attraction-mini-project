@@ -1,0 +1,53 @@
+.posts-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5vw;
+    width: 100vw;
+    padding: 5vw;
+}
+
+.post {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    width: 100%;
+    img {
+        width: 30%;
+        border-radius: 20px;
+    }
+    .details {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        h1 {
+
+        }
+        p {
+
+        }
+        a {
+
+        }
+        .tags {
+            a {
+
+            }
+        }
+        .imgs-container {
+            img {
+                width: 200px;
+            }
+        }
+    }
+}
+
+
+
+p {
+    width: 100%;        
+    white-space: nowrap;  
+    overflow: hidden;     
+    text-overflow: ellipsis;
+}
