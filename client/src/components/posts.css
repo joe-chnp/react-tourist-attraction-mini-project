@@ -11,11 +11,12 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 50px;
+    gap: 5vw;
     width: 100%;
     position: relative;
     img {
         width: 30%;
+        height: fit-content;
         border-radius: 20px;
     }
     .details {
@@ -38,6 +39,7 @@
         }
         .tags {
             display: flex;
+            flex-wrap: wrap;
             gap: 10px;
             span {
                 color: gray;
@@ -51,7 +53,7 @@
         }
         .imgs-container {
             display: flex;
-            gap: 50px;
+            gap: 5vw;
             margin-top: 10px;
             div {
                 width: 140px;
@@ -69,7 +71,7 @@
     }
     .copyLink {
         position: absolute;
-        right: 70px;
+        right: 0;
         bottom: 0;
     }
 }
@@ -79,4 +81,27 @@ p {
     white-space: nowrap;  
     overflow: hidden;     
     text-overflow: ellipsis;
+}
+
+@media only screen and (max-width: 992px){
+    .post {
+        padding-bottom: 10vw;
+        img {
+            width: 100%;
+        }
+        flex-direction: column;
+        .details {
+            width: 100%;
+            .title {
+                font-size: 20px;
+            }
+        }
+        .copyLink {
+            height: fit-content;
+            bottom: -8px;
+            svg {
+                width: 30px;
+            }
+        }
+    }
 }
