@@ -1,13 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+.kanit-regular {
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }  
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "Kanit";
+    font-size: 20px;
+}
+
+.App {
+    padding: 5vw;
 }
 
 header {
     display: flex;
     justify-content: center;
     font-size: 70px;
+    color: #1DACD6;
+    margin-bottom: 20px;
 }
 
 .search-box {
@@ -15,13 +31,17 @@ header {
     flex-direction: column;
     margin: 0 10%;
     label{
-
+        font-size: 20px;
     }
     input {
         border: none;
         border-bottom: 1px solid gray;
+        margin-top: 10px;
+        padding: 5px;
+        font-size: 20px;
     }
     input::placeholder {
         text-align: center;
+        color: lightgray;
     }
 }

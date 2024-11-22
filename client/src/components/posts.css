@@ -1,9 +1,10 @@
+
 .posts-container {
     display: flex;
     flex-direction: column;
     gap: 5vw;
-    width: 100vw;
-    padding: 5vw;
+    width: 100%;
+    margin-top: 5vw;
 }
 
 .post {
@@ -12,6 +13,7 @@
     justify-content: center;
     gap: 50px;
     width: 100%;
+    position: relative;
     img {
         width: 30%;
         border-radius: 20px;
@@ -21,29 +23,56 @@
         display: flex;
         flex-direction: column;
         gap: 10px;
-        h1 {
-
+        .title {
+            text-decoration: none;
+            color: black;
+            font-size: 30px;
+            font-weight: 800;
         }
         p {
-
+            color: gray;
         }
         a {
-
+            text-decoration: underline;
+            color: #1DACD6;
         }
         .tags {
-            a {
-
+            display: flex;
+            gap: 10px;
+            span {
+                color: gray;
+            }
+            button {
+                background: none;
+                border: none;
+                color: gray;
+                text-decoration: underline;
             }
         }
         .imgs-container {
-            img {
-                width: 200px;
-            }
+            display: flex;
+            gap: 50px;
+            margin-top: 10px;
+            div {
+                width: 140px;
+                height: 140px;
+                overflow: hidden;
+                display: flex;
+                justify-content: center;
+                border-radius: 10px;
+                img {
+                    width: 200px;
+                    height: auto;
+                }
+            } 
         }
     }
+    .copyLink {
+        position: absolute;
+        right: 70px;
+        bottom: 0;
+    }
 }
-
-
 
 p {
     width: 100%;        
